@@ -335,7 +335,13 @@ section {
         border-radius: 1vw;
     }
 
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
     nav {
+        width: 100vw;
         padding: 3vw 4vw;
         border-bottom: 1px solid var(--text);
     
@@ -367,7 +373,7 @@ section {
         border-bottom: 2px solid var(--text);
     
         h1 {
-            font-size: 15vw;
+            font-size: 13vw;
             font-style: italic;
             /* transition: all 0.5s ease-in; */
         }
@@ -379,6 +385,7 @@ section {
             font-weight: 300;
             padding-right: 0vw;
             position: relative;
+            font-size: 3vw;
             width: 100%;
             margin-left: 0%;
             /* transition: all 0.5s ease-in; */
@@ -389,6 +396,7 @@ section {
     }
 
     section {
+        width: 100vw;
         flex-direction: column;
         padding: 3vw;
         padding-bottom: 10vw;
@@ -396,7 +404,7 @@ section {
         position: relative;
     
         .part1 {
-            width: 100%;
+            width: 97%;
             padding: 3vw;
             padding-bottom: 5vw;
             gap: 4vw;
@@ -433,9 +441,9 @@ section {
         }
     
         .part2 {
-            width: 95%;
+            width: 97%;
             padding-top: 5vw;
-            padding-left: 0vw;
+            padding-left: 3vw;
             display: grid;
             gap: 5vw;
             grid-template-columns: repeat(2,1fr);
@@ -446,6 +454,7 @@ section {
     
             .card {
                 width: 100%;
+                overflow: hidden;
                 height: fit-content;
                 padding: 0vw;
                 gap: 4vw;
@@ -458,6 +467,7 @@ section {
                 }
                 img {
                     transition: none;
+                    overflow: hidden;
                 }
                 img:hover {
                     scale: 1;
